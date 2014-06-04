@@ -1,13 +1,16 @@
 package br.com.foo.contact;
 
+import java.io.Serializable;
 import java.util.Calendar;
 
 /**
  * Created by moises on 5/31/14.
  */
-public class Contact {
+public class Contact implements Serializable {
 
-    private String firstName;
+	private static final long serialVersionUID = 1L;
+
+	private String firstName;
     private String lastName;
     private String street;
     private int postalCode;
